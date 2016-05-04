@@ -14,7 +14,7 @@
         </div>
 		<div ng-repeat="item in filteredMovieItems" class="movieListContainer container-fluid" >
 		    <a href="/movie/{{item.slug}}">
-		        <div id="{{item.slug}}" class="movieItemContainer row img-rounded">
+		        <div id="{{item.slug}}" class="movieItemContainer row">
 		            <div class="col-md-3">
 		                <img ng-src="{{item.image}}" err-src="{{fallBackImage}}" alt="{{item.title}}" />
 		            </div>
