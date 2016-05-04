@@ -51,7 +51,7 @@ app.controller('MoviesController',['$scope', 'MoviesFactory',
                 end = begin + $scope.numPerPage;
 
             $scope.filteredMovieItems = $scope.items.slice(begin, end);
-            $scope.itemsBegin = begin;
+            $scope.itemsBegin = begin + 1;
             $scope.itemsEnd = begin + $scope.filteredMovieItems.length;
         };
 
