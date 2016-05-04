@@ -1,0 +1,17 @@
+{
+  "name": "studiostest",
+  "version": "1.0.0",
+  "description": "Studios Test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node node_modules/json-server/bin --watch dma-interview.json",
+    "postinstall": "bower install"
+  },
+  "author": "Oscar Chuco",
+  "license": "ISC",
+  "dependencies": {
+    "bower": "^1.7.9",
+    "json-server": "^0.8.10"
+  }
+}

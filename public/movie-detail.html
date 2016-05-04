@@ -1,0 +1,5 @@
+<h1>{{item.title}}</h1>
+<img ng-src="{{item.image}}" err-src="{{fallBackImage}}" alt="{{item.title}}" />
+<div class="date">Release Date: {{item.date | date: 'MMMM dd, yyyy'}}</div>
+<div class="rating">Rating: {{item.rating | uppercase}}</div>
+<div class="runtime">Runtime: {{item.run_time | secondsToRunTime}}</div>

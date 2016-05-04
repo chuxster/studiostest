@@ -1,0 +1,46 @@
+<div class="row">
+    <div class="col-md-12 searchBarContainer">
+        <input class="center-block searchBar" ng-model="titleQuery" ng-change="searchMovieTitle()" placeholder="search">
+    </div>
+</div>
+<div class="mainContainer row">
+	<div ng-if="filteredMovieItems.length < 1">
+		<p>Sorry! No results to display</p>
+	</div>
+	<div ng-show="filteredMovieItems.length >= 1">
+        <div class="row searchOptionsContainer">
+            <div class="col-md-8">{{itemsBegin}} - {{itemsEnd}} of {{filteredMovieItems.length}} results</div>
+            <div class="col-md-4"></div>
+        </div>
+		<div ng-repeat="item in filteredMovieItems" class="movieListContainer container-fluid" >
+		    <a href="/movie/{{item.slug}}">
+		        <div id="{{item.slug}}" class="movieItemContainer row img-rounded">
+		            <div class="col-md-3">
+		                <img ng-src="{{item.image}}" err-src="{{fallBackImage}}" alt="{{item.title}}" />
+		            </div>
+		            <section class="col-md-9">
+						<div class="row">
+							<h1 class="title">{{item.title}}</h1>
+							<span class="rating">{{item.rating | uppercase}}</span>
+						</div>
+						<div class="row">
+							<div class="col-md-5">Add To Wishlist</div>
+							<div class="col-md-5">
+								<div class="date">Release Date: {{item.date | date: 'MMMM dd, yyyy'}}</div>
+								<div class="runtime">Run Time: {{item.run_time | secondsToRunTime}}</div>
+							</div>
+						</div>
+		            </section>
+		        </div>
+		    </a>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<uib-pagination
+        ng-model="currentPage"
+        total-items="items.length"
+        max-size="maxSize"
+        boundary-links="true">
+	</uib-pagination>
+</div>

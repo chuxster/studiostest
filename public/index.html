@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <meta />
+    <base href="/" />
+    <head>
+        <title>Studios Demo</title>
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="../bower_components/angular-bootstrap/ui-bootstrap-csp.css">
+        <link rel="stylesheet" href="scripts/css/movies.css">
+
+        <!-- Libraries -->
+        <script src="../bower_components/angular/angular.js"></script>
+        <script src="../bower_components/angular-route/angular-route.js"></script>
+        <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+        <script src="scripts/app.module.js"></script>
+
+        <!-- Controllers -->
+        <script src="scripts/controllers/MoviesController.js"></script>
+        <script src="scripts/controllers/MovieDetailsController.js"></script>
+        <script src="scripts/services/movies.service.js"></script>
+        
+        <!-- Directives -->
+        <script src="scripts/directives/movieDirectives.js"></script>
+        
+        <!-- Filters -->
+        <script src="scripts/filters/movieFilters.js"></script>
+    </head>
+    <body ng-app="studiostest" class="container-fluid">
+        <header ng-include="'global.header.html'"></header>
+        <div ng-view></div>
+        <footer ng-include="'global.footer.html'"></footer>
+    </body>
+</html>
