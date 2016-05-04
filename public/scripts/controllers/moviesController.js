@@ -9,8 +9,8 @@ app.controller('MoviesController',['$scope', 'MoviesFactory',
         $scope.fallBackImage = 'http://placehold.it/195x292';
         $scope.filteredMovieItems = [];
         $scope.currentPage = 1;
-        $scope.numPerPage = 10;
-        $scope.maxSize = 5;
+        $scope.numPerPage = 5;
+        $scope.itemsPerPage = 5;
         $scope.itemsBegin = 0;
         $scope.itemsEnd = 0;
 
