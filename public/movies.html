@@ -9,7 +9,7 @@
 	</div>
 	<div ng-show="filteredMovieItems.length >= 1">
         <div class="row searchOptionsContainer">
-            <div class="col-md-8">{{itemsBegin}} - {{itemsEnd}} of {{filteredMovieItems.length}} results</div>
+            <div class="col-md-8">{{itemsBegin}} - {{itemsEnd}} of {{items.length}} results</div>
             <div class="col-md-4"></div>
         </div>
 		<div ng-repeat="item in filteredMovieItems" class="movieListContainer container-fluid" >

@@ -2,6 +2,10 @@
     margin: 20px 0;
 }
 
+.searchBar {
+    width: 100%;
+}
+
 .movieItemContainer {
     padding: 10px;
     margin: 5px 0;
