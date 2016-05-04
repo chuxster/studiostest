@@ -2,8 +2,12 @@
     margin: 20px 0;
 }
 
-.searchBar {
+.searchBarContainer .searchBar {
     width: 100%;
+}
+
+.paginationContainer .pagination {
+    margin-left: 40%;
 }
 
 .movieItemContainer {

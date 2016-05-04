@@ -36,12 +36,13 @@
 		</div>
 	</div>
 </div>
-<div class="row">
+<div class="paginationContainer row center-block">
 	<uib-pagination
         ng-model="currentPage"
         total-items="items.length"
         items-per-page="itemsPerPage"
         max-size="maxSize"
-        boundary-links="true">
+        boundary-links="false"
+        direction-links="false">
 	</uib-pagination>
 </div>
